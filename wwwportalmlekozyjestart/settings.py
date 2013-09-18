@@ -153,3 +153,21 @@ LOGGING = {
         },
     }
 }
+import os
+import os.path
+
+try:
+    import dj_database_url
+except ImportError:
+    pass
+else:
+    try:
+        with open(os.environ['DATABASE_PATH_WWWPORTALMLEKOZYJESTART'], 'r') as url_file:
+            url = url_file.read()
+    except (IOError, KeyError):
+        pass
+    else:
+        DATABASES['default'] = dj_database_url.parse(url)
+
+if STATIC_ROOT == '':
+    STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static')
