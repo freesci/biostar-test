@@ -1,5 +1,11 @@
 # Django settings for wwwportalmlekozyjestart project.
 
+def path(*args):
+    "Generates absolute paths"
+    return os.path.abspath(os.path.join(*args))
+
+
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -8,17 +14,36 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
+__CURR_DIR = path(os.path.dirname(__file__))
+
+# set location relative to the current file directory
+HOME_DIR = path(__CURR_DIR)
+DATABASE_DIR = path(HOME_DIR, 'db')
+DATABASE_NAME = path(DATABASE_DIR, 'biostar.db')
+TEMPLATE_DIR = path(HOME_DIR, 'main', 'templates')
+STATIC_DIR = path(HOME_DIR, 'static')
+EXPORT_DIR = path(HOME_DIR, '..', 'apache', 'export')
+WHOOSH_INDEX = path(HOME_DIR, 'db', 'index')
+PLANET_DIR = path(HOME_DIR, 'db', 'planet')
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
-        'USER': '',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'ENGINE': 'django.db.backends.sqlite3',
+        # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': DATABASE_NAME, # Or path to database file if using sqlite3.
+        'USER': '', # Not used with sqlite3.
+        'PASSWORD': '', # Not used with sqlite3.
+        'HOST': '', # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '', # Set to empty string for default. Not used with sqlite3.
     }
 }
+
+__ZIP_LIBS = [
+    path(__CURR_DIR, '..', 'libs'),
+    path(__CURR_DIR, '..', 'libs', 'libraries.zip'),
+]
+sys.path.extend(__ZIP_LIBS)
+
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.4/ref/settings/#allowed-hosts
@@ -46,31 +71,31 @@ USE_L10N = True
 
 # If you set this to False, Django will not use timezone-aware datetimes.
 USE_TZ = True
-
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = '.'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = ''
+MEDIA_URL = '/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = ''
+STATIC_URL = '/static/'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+STATIC_ROOT = path(EXPORT_DIR, "static")
 
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+	STATIC_DIR,
 )
 
 # List of finder classes that know how to find static files in
@@ -79,6 +104,8 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'compressor.finders.CompressorFinder',
+
 )
 
 # Make this unique, and don't share it with anybody.
@@ -101,16 +128,35 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'wwwportalmlekozyjestart.middleware.XForwardedForMiddleware',
 )
+COMPRESS_PRECOMPILERS = (
+    #('text/coffeescript', 'coffee --compile --stdio'),
+    ('text/less', 'lessc {infile} {outfile}'),
+)
 
-ROOT_URLCONF = 'wwwportalmlekozyjestart.urls'
+
+DEBUG_TOOLBAR_CONFIG = {
+    'INTERCEPT_REDIRECTS': False,
+}
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache' if DEBUG else 'django.core.cache.backends.locmem.LocMemCache',
+        #'BACKEND':  'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake'
+    }
+}
+
+
+ROOT_URLCONF = 'main.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'wwwportalmlekozyjestart.wsgi.application'
+WSGI_APPLICATION = 'main.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+	TEMPLATE_DIR,
 )
 
 INSTALLED_APPS = (
@@ -124,6 +170,19 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'django.contrib.humanize',
+    'django.contrib.markup',
+    'django.contrib.messages',
+    # Uncomment the next line to enable the admin:
+    'django.contrib.admin',
+    # Uncomment the next line to enable admin documentation:
+    'django.contrib.admindocs',
+    'south',
+    'compressor',
+    'main.server',
+    'django_openid_auth',
+    'django.contrib.sitemaps',
+
 )
 
 # A sample logging configuration. The only tangible logging
@@ -154,6 +213,114 @@ LOGGING = {
         },
     }
 }
+
+GOOGLE_TRACKER = ""
+GOOGLE_DOMAIN = ""
+
+# needs to be turned on explicitly
+CONTENT_INDEXING = True
+
+# rank gains expressed in hours
+POST_UPVOTE_RANK_GAIN = 1
+POST_VIEW_RANK_GAIN = 0.1
+BLOG_VIEW_RANK_GAIN = 0.1
+
+# if this is set together with the DEBUG mode allows test logins
+# don't turn it on in production servers!
+SELENIUM_TEST_LOGIN_TOKEN = None
+
+# no external authentication by default
+# dictionary keyed by name containing the tuple of (secret key, template)
+EXTERNAL_AUTHENICATION = {
+
+}
+
+# setting the session for multiple servers
+SESSION_COOKIE_DOMAIN = ""
+
+MIN_POST_SIZE = 15
+MAX_POST_SIZE = 20000
+
+RECENT_VOTE_COUNT = 10
+RECENT_TAG_COUNT = 30
+# set the tag names are to be displayed on the main page
+IMPORTANT_TAG_NAMES = "rna-seq chip-seq assembly snp metagenomics vcf cnv mirna indel bwa bowtie bedtools biopython bioperl".split()
+
+# the interval specified in hours
+# that user activity throttling is computed over
+TRUST_INTERVAL = 3
+
+# how many posts may a new user make in a trust interval
+# new user means a user that joined within a trust interval time
+TRUST_NEW_USER_MAX_POST = 3
+
+# how many posts may a trusted user make withing a trust in
+TRUST_USER_MAX_POST = 15
+
+COUNT_INTERVAL_WEEKS = 25
+
+# the time between registering two post views
+# from the same IP, in minutes
+POST_VIEW_UPDATE = 30
+
+# TEMPLATE LAYOUT,
+# One may override these variables from the settings file
+# 
+
+s data governs the layout of the PILL_BAR    
+# bar name, link url, link name, counter key
+ANON_PILL_BAR = [
+    ("all", "/", "Show&nbsp;All", "" ),
+    ("best", "/show/best", "Popular", "Popular"),
+    ("bookmarked", "/show/bookmarked", "Bookmarked", "Bookmarked"),
+    ("questions", "/show/questions/", "Questions", "Question" ),
+    ("unanswered", "/show/unanswered/", "Unanswered", "Unanswered" ),
+    ("forum", "/show/forum/", "Forum", "Forum" ),
+    ("howto", "/show/howto/", "How To", "howto" ),
+    #("galaxy", "/show/galaxy/", "Galaxy", "Galaxy" ),
+    ("jobs", "/show/jobs/", "Jobs", "Job" ),
+    ("planet", "/show/planet/", "Planet", "Blog" ),
+
+]
+
+USER_PILL_BAR = [
+
+    ("myposts", "/show/myposts/", '<i class="icon-user tx" data-toggle="tooltip" title="Your posts"></i>', "" ),
+    ("mytags", "/show/mytags/", '<i class="icon-tags tx" data-toggle="tooltip" title="Your tags"></i>', "" ),
+    ("mybookmarks", "/show/mybookmarks/", '<i class="icon-bookmark tx" data-toggle="tooltip" title="Your bookmarks"></i>', "" ),
+    ("myvotes", "/show/myvotes/", '<i class="icon-heart tx" data-toggle="tooltip" title="Up votes"></i>', "vote_count", "" ),
+    ("messages", "/show/messages/", '<i class="icon-envelope tx" data-toggle="tooltip" title="Messages"></i>', "message_count", "" ),
+("all", "/", "Show&nbsp;All", "" ),
+
+    ("best", "/show/best", "Popular", "Popular"),
+    ("questions", "/show/questions/", "Questions", "Question" ),
+    ("unanswered", "/show/unanswered/", "Unanswered", "Unanswered" ),
+    ("forum", "/show/forum/", "Forum", "Forum" ),
+    ("howto", "/show/howto/", "How To", "howto" ),
+    #("galaxy", "/show/galaxy/", "Galaxy", "Galaxy" ),
+    ("jobs", "/show/jobs/", "Jobs", "Job" ),
+    ("planet", "/show/planet/", "Planet", "Blog" ),
+
+]
+
+SHOW_ADS = True
+
+#
+# remapping the templates to local versions
+# a row is the way a post is rendered on a page
+# list below the templates to be loaded for a post type
+# to reduce clutter there is a default mapper that
+# for missing types attempts to map each type to rows/row.type.html
+# django template lookup rules apply
+#
+TEMPLATE_ROWS = {
+    'job': "rows/row.job.html",
+}
+
+# how long will an ad be active by default
+DEFAULT_AD_EXPIRATION = 1
+
+
 import os
 import os.path
 
@@ -171,4 +338,4 @@ else:
         DATABASES['default'] = dj_database_url.parse(url)
 
 if STATIC_ROOT == '':
-    STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static')
+   STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static')
