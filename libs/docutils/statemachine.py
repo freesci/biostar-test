@@ -1,6 +1,6 @@
  # $Id: statemachine.py 7037 2011-05-19 08:56:27Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 A finite state machine specialized for regular-expression-based text filters,

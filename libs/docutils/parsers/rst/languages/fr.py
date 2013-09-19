@@ -1,6 +1,6 @@
 # $Id: fr.py 6460 2010-10-29 22:18:44Z milde $
 # Authors: David Goodger <goodger@python.org>; William Dode
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 # New language mappings are welcome.  Before doing a new translation, please
 # read <http://docutils.sf.net/docs/howto/i18n.html>.  Two files must be

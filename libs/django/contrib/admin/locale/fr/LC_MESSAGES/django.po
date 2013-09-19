@@ -838,16 +838,16 @@ msgstr "Réinitialiser mon mot de passe"
 msgid "All dates"
 msgstr "Toutes les dates"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(aucun-e)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "Sélectionnez %s"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "Sélectionnez l'objet %s à changer"

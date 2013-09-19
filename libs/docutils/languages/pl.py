@@ -1,6 +1,6 @@
 # $Id$
 # Author: Robert Wojciechowicz <rw@smsnet.pl>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 # New language mappings are welcome.  Before doing a new translation, please
 # read <http://docutils.sf.net/docs/howto/i18n.html>.  Two files must be

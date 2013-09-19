@@ -799,16 +799,16 @@ msgstr "重設我的密碼"
 msgid "All dates"
 msgstr "所有日期"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr ""
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "選擇 %s"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "選擇 %s 來變更"

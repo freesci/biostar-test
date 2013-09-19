@@ -1,6 +1,6 @@
 # $Id: null.py 4564 2006-05-21 20:44:42Z wiemann $
 # Author: Martin Blais <blais@furius.ca>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """A do-nothing parser."""
 

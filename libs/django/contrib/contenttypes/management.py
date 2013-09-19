@@ -67,7 +67,7 @@ If you're unsure, answer 'no'.
                 ct.delete()
         else:
             if verbosity >= 2:
-                print "Stale content types remain."
+                print "Stale content types rewwwportalmlekozyjestart."
 
 def update_all_contenttypes(verbosity=2, **kwargs):
     for app in get_apps():

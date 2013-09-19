@@ -1,6 +1,6 @@
 # $Id: nodes.py 7054 2011-06-07 15:05:58Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Docutils document tree element class library.

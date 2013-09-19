@@ -1,4 +1,4 @@
-from main.settings import *
+from wwwportalmlekozyjestart.settings import *
 import os
 
 ADMINS = (

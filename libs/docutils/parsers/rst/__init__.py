@@ -1,6 +1,6 @@
 # $Id: __init__.py 7062 2011-06-30 22:14:29Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 This is ``docutils.parsers.rst`` package. It exports a single class, `Parser`,

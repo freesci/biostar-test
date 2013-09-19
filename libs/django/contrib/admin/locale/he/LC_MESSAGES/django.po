@@ -813,16 +813,16 @@ msgstr "אפס את סיסמתי"
 msgid "All dates"
 msgstr "כל התאריכים"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(אין)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "בחירת %s"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "בחירת %s לשינוי"

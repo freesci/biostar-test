@@ -40,7 +40,7 @@ class YearView(DateViewMixin, dates.YearArchiveView):
 
 
 class IndexView(DateViewMixin, dates.ArchiveIndexView):
-    template_name = 'databrowse/calendar_main.html'
+    template_name = 'databrowse/calendar_wwwportalmlekozyjestart.html'
 
 
 class CalendarPlugin(DatabrowsePlugin):

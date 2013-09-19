@@ -1,6 +1,6 @@
 # $Id: universal.py 6112 2009-09-03 07:27:59Z milde $
 # Authors: David Goodger <goodger@python.org>; Ueli Schlaepfer
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Transforms needed by most or all documents:

@@ -1,4 +1,4 @@
-.. This data file has been placed in the public domain.
+.. This data file has been placed in the public dowwwportalmlekozyjestart.
 .. Derived from the Unicode character mappings available from
    <http://www.w3.org/2003/entities/xml/>.
    Processed by unicode2rstsubs.py, part of Docutils:

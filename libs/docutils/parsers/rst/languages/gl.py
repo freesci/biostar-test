@@ -3,7 +3,7 @@
 # Contact: goodger@users.sourceforge.net
 # Revision: $Revision: 4229 $
 # Date: $Date: 2005-12-23 00:46:16 +0100 (Fri, 23 Dec 2005) $
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 # New language mappings are welcome.  Before doing a new translation, please
 # read <http://docutils.sf.net/docs/howto/i18n.html>.  Two files must be

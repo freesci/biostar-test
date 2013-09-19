@@ -1,6 +1,6 @@
 # $Id: __init__.py 6433 2010-09-28 08:21:25Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 This package contains Docutils Writer modules.

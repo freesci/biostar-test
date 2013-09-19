@@ -822,16 +822,16 @@ msgstr "Құпия сөзді жаңала"
 msgid "All dates"
 msgstr "Барлық мерзімдер"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(Ешнарсе)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "%s таңда"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "%s өзгерту үщін таңда"

@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 # $Id: lt.py 6459 2010-10-29 22:07:34Z milde $
 # Author: Dalius Dobravolskas <dalius.do...@gmail.com>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 # New language mappings are welcome.  Before doing a new translation, please
 # read <http://docutils.sf.net/docs/howto/i18n.html>.  Two files must be
@@ -62,7 +62,7 @@ order."""
 # -*- coding: utf8 -*-
 # $Id: lt.py 6459 2010-10-29 22:07:34Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 # New language mappings are welcome.  Before doing a new translation, please
 # read <http://docutils.sf.net/docs/howto/i18n.html>.  Two files must be

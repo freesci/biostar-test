@@ -1,6 +1,6 @@
 # $Id: frontend.py 7071 2011-07-05 10:13:46Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Command-line and common processing for Docutils front-end tools.

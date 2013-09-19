@@ -1,6 +1,6 @@
 # $Id: core.py 7070 2011-07-05 10:13:17Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Calling the ``publish_*`` convenience functions (or instantiating a

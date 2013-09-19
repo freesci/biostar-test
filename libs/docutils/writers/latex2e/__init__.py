@@ -1,7 +1,7 @@
 # .. coding: utf8
 # $Id: __init__.py 7102 2011-08-24 13:36:28Z milde $
 # Author: Engelbert Gruber <grubert@users.sourceforge.net>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """LaTeX2e document tree Writer."""
 

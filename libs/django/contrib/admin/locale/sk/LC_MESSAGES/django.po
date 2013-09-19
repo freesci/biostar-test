@@ -832,16 +832,16 @@ msgstr "Obnova môjho hesla"
 msgid "All dates"
 msgstr "Všetky dátumy"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(Žiadne)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "Vybrať %s"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "Vybrať \"%s\" na úpravu"

@@ -1,5 +1,5 @@
 .. Definitions of interpreted text roles (classes) for S5/HTML data.
-.. This data file has been placed in the public domain.
+.. This data file has been placed in the public dowwwportalmlekozyjestart.
 
 .. Colours
    =======

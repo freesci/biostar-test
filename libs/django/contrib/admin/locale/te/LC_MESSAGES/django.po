@@ -793,16 +793,16 @@ msgstr "అనుమతిపదం తిరిగి అమర్చు"
 msgid "All dates"
 msgstr "అన్నీ  తేదీలు"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr ""
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "%s ని ఎన్నుకోండి"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "%s ని మార్చటానికి  ఎన్నుకోండి"

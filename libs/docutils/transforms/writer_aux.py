@@ -1,6 +1,6 @@
 # $Id: writer_aux.py 6433 2010-09-28 08:21:25Z milde $
 # Author: Lea Wiemann <LeWiemann@gmail.com>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Auxiliary transforms mainly to be used by Writer components.

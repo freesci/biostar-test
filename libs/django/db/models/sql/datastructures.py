@@ -1,6 +1,6 @@
 """
 Useful auxilliary data structures for query construction. Not useful outside
-the SQL domain.
+the SQL dowwwportalmlekozyjestart.
 """
 
 class EmptyResultSet(Exception):

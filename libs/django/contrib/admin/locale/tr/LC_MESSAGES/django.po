@@ -822,16 +822,16 @@ msgstr "Şifremi sıfırla"
 msgid "All dates"
 msgstr "Tüm tarihler"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(Yok)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "%s seç"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "Değiştirilecek %s nesnesini seçin"

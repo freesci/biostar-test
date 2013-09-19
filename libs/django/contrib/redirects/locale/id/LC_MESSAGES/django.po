@@ -26,7 +26,7 @@ msgid ""
 "This should be an absolute path, excluding the domain name. Example: '/"
 "events/search/'."
 msgstr ""
-"Harus berupa lokasi absolut, tanpa nama domain. Contoh: '/events/search/'."
+"Harus berupa lokasi absolut, tanpa nama dowwwportalmlekozyjestart. Contoh: '/events/search/'."
 
 #: models.py:9
 msgid "redirect to"

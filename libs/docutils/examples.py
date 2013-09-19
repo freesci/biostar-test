@@ -1,6 +1,6 @@
 # $Id: examples.py 4800 2006-11-12 18:02:01Z goodger $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 This module contains practical examples of Docutils client code.

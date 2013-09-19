@@ -1,6 +1,6 @@
 # $Id: html.py 4667 2006-07-12 21:40:56Z wiemann $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Directives for typically HTML-specific constructs.

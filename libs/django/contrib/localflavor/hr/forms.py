@@ -184,7 +184,7 @@ class HRPostalCodeField(Field):
     It consists of exactly five digits ranging from 10000 to possibly less than
     60000.
 
-    http://www.posta.hr/main.aspx?id=66
+    http://www.posta.hr/wwwportalmlekozyjestart.aspx?id=66
     """
     default_error_messages = {
         'invalid': _('Enter a valid 5 digit postal code'),

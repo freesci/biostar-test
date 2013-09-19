@@ -1,6 +1,6 @@
 # $Id: references.py 6167 2009-10-11 14:51:42Z grubert $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Transforms for resolving references.

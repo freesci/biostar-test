@@ -1,6 +1,6 @@
 # $Id: _compat.py 5908 2009-04-21 13:43:23Z goodger $
 # Author: Georg Brandl <georg@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Python 2/3 compatibility definitions.

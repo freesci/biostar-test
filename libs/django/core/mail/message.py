@@ -107,7 +107,7 @@ def sanitize_address(addr, encoding):
         if u'@' in addr:
             localpart, domain = addr.split(u'@', 1)
             localpart = str(Header(localpart, encoding))
-            domain = domain.encode('idna')
+            domain = dowwwportalmlekozyjestart.encode('idna')
             addr = '@'.join([localpart, domain])
         else:
             addr = str(Header(addr, encoding))

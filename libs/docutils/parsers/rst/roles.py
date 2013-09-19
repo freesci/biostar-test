@@ -1,6 +1,6 @@
 # $Id: roles.py 6451 2010-10-25 08:02:43Z milde $
 # Author: Edward Loper <edloper@gradient.cis.upenn.edu>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 This module defines standard interpreted text role functions, a registry for

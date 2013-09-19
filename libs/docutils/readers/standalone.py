@@ -1,6 +1,6 @@
 # $Id: standalone.py 4802 2006-11-12 18:02:17Z goodger $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Standalone file Reader for the reStructuredText markup syntax.

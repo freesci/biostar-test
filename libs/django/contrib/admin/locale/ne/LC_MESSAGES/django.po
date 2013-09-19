@@ -795,16 +795,16 @@ msgstr "मेरो पासवर्ड पुन: राख्नुहो�
 msgid "All dates"
 msgstr "सबै मिति"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(शुन्य)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "%s छान्नुहोस"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "%s परिवर्तन गर्न छान्नुहोस ।"

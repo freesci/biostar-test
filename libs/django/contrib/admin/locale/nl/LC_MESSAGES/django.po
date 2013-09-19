@@ -826,16 +826,16 @@ msgstr "Herstel mijn wachtwoord"
 msgid "All dates"
 msgstr "Alle data"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(Geen)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "Selecteer %s"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "Selecteer %s om te wijzigen"

@@ -801,16 +801,16 @@ msgstr "Seti upya nenosiri langu"
 msgid "All dates"
 msgstr "Tarehe zote"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(Hakuna)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "Chagua %s"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "Chaguo %s kwa mabadilisho"

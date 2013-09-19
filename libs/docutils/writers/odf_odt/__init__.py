@@ -1,6 +1,6 @@
 # $Id: __init__.py 7057 2011-06-27 05:39:48Z dkuhlman $
 # Author: Dave Kuhlman <dkuhlman@rexx.com>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Open Document Format (ODF) Writer.

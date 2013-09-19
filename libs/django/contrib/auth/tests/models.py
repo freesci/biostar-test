@@ -95,7 +95,7 @@ class UserManagerTestCase(TestCase):
 
     def test_create_user_email_domain_normalize(self):
         returned = UserManager.normalize_email('normal@DOMAIN.COM')
-        self.assertEquals(returned, 'normal@domain.com')
+        self.assertEquals(returned, 'normal@dowwwportalmlekozyjestart.com')
 
     def test_create_user_email_domain_normalize_with_whitespace(self):
         returned = UserManager.normalize_email('email\ with_whitespace@D.COM')

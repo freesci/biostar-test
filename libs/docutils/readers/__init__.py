@@ -1,6 +1,6 @@
 # $Id: __init__.py 5618 2008-07-28 08:37:32Z strank $
 # Authors: David Goodger <goodger@python.org>; Ueli Schlaepfer
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 This package contains Docutils Reader modules.

@@ -45,7 +45,7 @@ class CookieStorage(BaseStorage):
     """
     cookie_name = 'messages'
     # We should be able to store 4K in a cookie, but Internet Explorer
-    # imposes 4K as the *total* limit for a domain.  To allow other
+    # imposes 4K as the *total* limit for a dowwwportalmlekozyjestart.  To allow other
     # cookies, we go for 3/4 of 4K.
     max_cookie_size = 3072
     not_finished = '__messagesnotfinished__'

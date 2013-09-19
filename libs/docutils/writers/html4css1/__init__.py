@@ -1,6 +1,6 @@
 # $Id: __init__.py 7061 2011-06-29 16:24:09Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Simple HyperText Markup Language document tree Writer.

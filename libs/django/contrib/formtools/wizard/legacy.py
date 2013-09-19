@@ -108,7 +108,7 @@ class FormWizard(object):
                 previous_form_list.append(f)
 
         # Process the current step. If it's valid, go to the next step or call
-        # done(), depending on whether any steps remain.
+        # done(), depending on whether any steps rewwwportalmlekozyjestart.
         if request.method == 'POST':
             form = self.get_form(current_step, request.POST)
         else:

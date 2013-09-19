@@ -1,6 +1,6 @@
 # $Id: __init__.py 6328 2010-05-23 21:20:29Z gbrandl $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 PEP HTML Writer.

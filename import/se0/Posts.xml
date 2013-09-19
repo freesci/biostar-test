@@ -58,7 +58,7 @@
 
 &lt;p&gt;The &lt;code&gt;[0,100]&lt;/code&gt; interval in &lt;code&gt;BED&lt;/code&gt; format corresponds to &lt;code&gt;[1,100]&lt;/code&gt; in &lt;code&gt;GFF&lt;/code&gt; format and both are &lt;code&gt;100&lt;/code&gt; base long. That the first element in BED format will be have the index of &lt;code&gt;0&lt;/code&gt; where the last &lt;code&gt;100th&lt;/code&gt; element will have the index of &lt;code&gt;99&lt;/code&gt;! Whereas in &lt;code&gt;GFF&lt;/code&gt; the first element will have the index of &lt;code&gt;1&lt;/code&gt; and the last element will have the index of &lt;code&gt;100&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;To convert between the two you may use &lt;a href="http://main.g2.bx.psu.edu/" rel="nofollow"&gt;Galaxy&lt;/a&gt; and select the section called &lt;code&gt;Select Formats&lt;/code&gt; that will list various transformation options.&lt;/p&gt;
+&lt;p&gt;To convert between the two you may use &lt;a href="http://wwwportalmlekozyjestart.g2.bx.psu.edu/" rel="nofollow"&gt;Galaxy&lt;/a&gt; and select the section called &lt;code&gt;Select Formats&lt;/code&gt; that will list various transformation options.&lt;/p&gt;
 </Body>
     <OwnerUserId>2</OwnerUserId>
     <LastEditorUserId>2</LastEditorUserId>
@@ -708,7 +708,7 @@ $gffio-&amp;gt;close();
 
 &lt;p&gt;The task at hand is complex. The solution always depends immensely on the particulars of the problem, moreover you will be facing myriads of frustrating limitations, errors and problems.&lt;/p&gt;
 
-&lt;p&gt;Learning directly from someone who has done it, establishing a personal rapport with them will allow you to ease into this problem domain. In fact when you are finished mapping your RNA - your are still likely to be far from being done - yet you might have expanded a lot of energy and excitement. &lt;/p&gt;
+&lt;p&gt;Learning directly from someone who has done it, establishing a personal rapport with them will allow you to ease into this problem dowwwportalmlekozyjestart. In fact when you are finished mapping your RNA - your are still likely to be far from being done - yet you might have expanded a lot of energy and excitement. &lt;/p&gt;
 </Body>
     <OwnerUserId>2</OwnerUserId>
     <LastActivityDate>2010-01-22T15:13:42.79</LastActivityDate>
@@ -850,7 +850,7 @@ $gffio-&amp;gt;close();
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.uniprot.org/?tab=mapping" rel="nofollow"&gt;uniprot&lt;/a&gt; - Click on 'Id Mapping' from the home page.&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.biomart.org/biomart/martview/" rel="nofollow"&gt;biomart&lt;/a&gt; - choose a database and a version, then put the ids you want to convert under Filters-&gt;Id List limit (select the proper input id in the menu), and then the output ids under 'Attributes'. Biomart is a general tool that enables you to extract a lot of different informations from databases - sequences, ontologies, transcripts, homologues - but maybe for converting gene ids is a bit too complex.&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://main.g2.bx.psu.edu/" rel="nofollow"&gt;galaxy&lt;/a&gt; - I can't help too much about this here but I am sure it has a function for doing that - and many other things.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wwwportalmlekozyjestart.g2.bx.psu.edu/" rel="nofollow"&gt;galaxy&lt;/a&gt; - I can't help too much about this here but I am sure it has a function for doing that - and many other things.&lt;/li&gt;
 &lt;/ul&gt;
 </Body>
     <OwnerUserId>23</OwnerUserId>
@@ -865,7 +865,7 @@ $gffio-&amp;gt;close();
     <Score>1</Score>
     <ViewCount>0</ViewCount>
     <Body>&lt;p&gt;Meme has been the first program to be published for doing that.
-As an alternative you can find one of the &lt;a href="http://www.be.embnet.org/embosshelp/" rel="nofollow"&gt;EMBOSS tools&lt;/a&gt;; if you are scared by a terminal and want to do it from a web-based interface, you can use the EMBOSS tools from &lt;a href="http://main.g2.bx.psu.edu/" rel="nofollow"&gt;galaxy&lt;/a&gt;&lt;/p&gt;
+As an alternative you can find one of the &lt;a href="http://www.be.embnet.org/embosshelp/" rel="nofollow"&gt;EMBOSS tools&lt;/a&gt;; if you are scared by a terminal and want to do it from a web-based interface, you can use the EMBOSS tools from &lt;a href="http://wwwportalmlekozyjestart.g2.bx.psu.edu/" rel="nofollow"&gt;galaxy&lt;/a&gt;&lt;/p&gt;
 </Body>
     <OwnerUserId>23</OwnerUserId>
     <LastActivityDate>2010-01-28T15:31:50.47</LastActivityDate>
@@ -10121,7 +10121,7 @@ It would be great to get a general feel of when people tend to submit there sequ
 
 &lt;p&gt;Mobyle: &lt;a href="http://mobyle.pasteur.fr" rel="nofollow"&gt;http://mobyle.pasteur.fr&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Galaxy: &lt;a href="http://main.g2.bx.psu.edu/" rel="nofollow"&gt;http://main.g2.bx.psu.edu/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Galaxy: &lt;a href="http://wwwportalmlekozyjestart.g2.bx.psu.edu/" rel="nofollow"&gt;http://wwwportalmlekozyjestart.g2.bx.psu.edu/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Orange: &lt;a href="http://www.ailab.si/orange/" rel="nofollow"&gt;http://www.ailab.si/orange/&lt;/a&gt;&lt;/p&gt;
 
@@ -10702,7 +10702,7 @@ Have a look at &lt;a href="http://stackoverflow.com/questions/1395309/how-to-mak
     <ViewCount>0</ViewCount>
     <Body>&lt;p&gt;You seem to be going at this a bit backwards. The first step in science is to make a hypothesis, then choose the appropriate tools to answer it.  That may include genome sequencing, it may not. It seems like you've got a hammer, and you're looking for a nail.&lt;/p&gt;
 
-&lt;p&gt;If you want to study cicadas, start reading up them. Look at the literature and see what other people are studying and what big unanswered cicada questions remain. If you lack access to subscription journals, try your local library, or other &lt;a href="http://friendfeed.com/references-wanted" rel="nofollow"&gt;online resources&lt;/a&gt;.  I suspect some of the questions relate to the different cycle lengths - have there been certain genes implicated? Do we know whether it's governed by differential gene expression, genomic factors, or even epigenomics? Has anyone sequenced them already? I'm sure some population geneticists would be interested in divergence patterns between the groups - might help you understand whether they're still the same species, or whether they're slowly splitting apart from each other because of the time differential in emergence.&lt;/p&gt;
+&lt;p&gt;If you want to study cicadas, start reading up them. Look at the literature and see what other people are studying and what big unanswered cicada questions rewwwportalmlekozyjestart. If you lack access to subscription journals, try your local library, or other &lt;a href="http://friendfeed.com/references-wanted" rel="nofollow"&gt;online resources&lt;/a&gt;.  I suspect some of the questions relate to the different cycle lengths - have there been certain genes implicated? Do we know whether it's governed by differential gene expression, genomic factors, or even epigenomics? Has anyone sequenced them already? I'm sure some population geneticists would be interested in divergence patterns between the groups - might help you understand whether they're still the same species, or whether they're slowly splitting apart from each other because of the time differential in emergence.&lt;/p&gt;
 
 &lt;p&gt;The same applies for fungi. Find out what some of the big unanswered questions are, then try to figure out what approach you might take to answer some of them. Then narrow it down further to manageable size projects that a new biologist could handle.&lt;/p&gt;
 </Body>
@@ -15143,7 +15143,7 @@ Output completed (7 sec consumed) - Normal Termination
 
 &lt;p&gt;The approach Galaxy takes is to use a groomer to convert everything to Sanger format, and then work from there:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="http://main.g2.bx.psu.edu/u/dan/p/fastq" rel="nofollow"&gt;http://main.g2.bx.psu.edu/u/dan/p/fastq&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://wwwportalmlekozyjestart.g2.bx.psu.edu/u/dan/p/fastq" rel="nofollow"&gt;http://wwwportalmlekozyjestart.g2.bx.psu.edu/u/dan/p/fastq&lt;/a&gt;&lt;/p&gt;
 </Body>
     <OwnerUserId>56</OwnerUserId>
     <LastActivityDate>2010-04-09T21:07:17.947</LastActivityDate>

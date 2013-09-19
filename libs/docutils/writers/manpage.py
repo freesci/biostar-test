@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # $Id: manpage.py 7048 2011-06-04 12:35:19Z grubert $
 # Author: Engelbert Gruber <grubert@users.sourceforge.net>
-# Copyright: This module is put into the public domain.
+# Copyright: This module is put into the public dowwwportalmlekozyjestart.
 
 """
 Simple man page writer for reStructuredText.

@@ -1,6 +1,6 @@
 # $Id: it.py 4564 2006-05-21 20:44:42Z wiemann $
 # Author: Nicola Larosa <docutils@tekNico.net>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 # New language mappings are welcome.  Before doing a new translation, please
 # read <http://docutils.sf.net/docs/howto/i18n.html>.  Two files must be

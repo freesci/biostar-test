@@ -833,16 +833,16 @@ msgstr "Ponastavi moje geslo"
 msgid "All dates"
 msgstr "Vsi datumi"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(None)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "Izberite %s"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "Izberite %s, ki ga želite spremeniti"

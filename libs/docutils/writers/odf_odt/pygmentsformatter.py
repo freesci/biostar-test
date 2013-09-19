@@ -1,6 +1,6 @@
 # $Id: pygmentsformatter.py 5853 2009-01-19 21:02:02Z dkuhlman $
 # Author: Dave Kuhlman <dkuhlman@rexx.com>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 

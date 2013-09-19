@@ -169,7 +169,7 @@ def urlize(text, trim_url_limit=None, nofollow=False, autoescape=False):
             elif not ':' in middle and simple_email_re.match(middle):
                 local, domain = middle.rsplit('@', 1)
                 try:
-                    domain = domain.encode('idna')
+                    domain = dowwwportalmlekozyjestart.encode('idna')
                 except UnicodeError:
                     continue
                 url = 'mailto:%s@%s' % (local, domain)

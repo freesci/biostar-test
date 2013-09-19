@@ -98,7 +98,7 @@ The [BED](http://genome.ucsc.edu/FAQ/FAQformat#format1) format developed at `UCS
 
 The `[0,100]` interval in `BED` format corresponds to `[1,100]` in `GFF` format and both are `100` base long. That the first element in BED format will be have the index of `0` where the last `100th` element will have the index of `99`! Whereas in `GFF` the first element will have the index of `1` and the last element will have the index of `100`.
 
-To convert between the two you may use [Galayx](http://main.g2.bx.psu.edu/) and select the section called `Select Formats` that will list various transformation options.
+To convert between the two you may use [Galayx](http://wwwportalmlekozyjestart.g2.bx.psu.edu/) and select the section called `Select Formats` that will list various transformation options.
 </Text>
   </row>
   <row>
@@ -297,7 +297,7 @@ The [BED](http://genome.ucsc.edu/FAQ/FAQformat#format1) format developed at `UCS
 
 The `[0,100]` interval in `BED` format corresponds to `[1,100]` in `GFF` format and both are `100` base long. That the first element in BED format will be have the index of `0` where the last `100th` element will have the index of `99`! Whereas in `GFF` the first element will have the index of `1` and the last element will have the index of `100`.
 
-To convert between the two you may use [Galaxy](http://main.g2.bx.psu.edu/) and select the section called `Select Formats` that will list various transformation options.
+To convert between the two you may use [Galaxy](http://wwwportalmlekozyjestart.g2.bx.psu.edu/) and select the section called `Select Formats` that will list various transformation options.
 </Text>
   </row>
   <row>
@@ -1247,7 +1247,7 @@ Thanks in advance </Text>
 
 The task at hand is complex. The solution always depends immensely on the particulars of the problem, moreover you will be facing myriads of frustrating limitations, errors and problems.
 
-Learning directly from someone who has done it, establishing a personal rapport with them will allow you to ease into this problem domain. In fact when you are finished mapping your RNA - your are still likely to be far from being done - yet you might have expanded a lot of energy and excitement. 
+Learning directly from someone who has done it, establishing a personal rapport with them will allow you to ease into this problem dowwwportalmlekozyjestart. In fact when you are finished mapping your RNA - your are still likely to be far from being done - yet you might have expanded a lot of energy and excitement. 
 
 
 </Text>
@@ -1404,7 +1404,7 @@ Install libraries and software. etc:
 
   [1]: http://www.uniprot.org/?tab=mapping
   [2]: http://www.biomart.org/biomart/martview/
-  [3]: http://main.g2.bx.psu.edu/</Text>
+  [3]: http://wwwportalmlekozyjestart.g2.bx.psu.edu/</Text>
   </row>
   <row>
     <Id>93</Id>
@@ -1419,7 +1419,7 @@ As an alternative you can find one of the [EMBOSS tools][1]; if you are scared b
 
 
   [1]: http://www.be.embnet.org/embosshelp/
-  [2]: http://main.g2.bx.psu.edu/</Text>
+  [2]: http://wwwportalmlekozyjestart.g2.bx.psu.edu/</Text>
   </row>
   <row>
     <Id>94</Id>
@@ -14372,7 +14372,7 @@ I aware only of Taverna and Plone4Bio. Is there other server-like virtual benche
 
 Mobyle: http://mobyle.pasteur.fr
 
-Galaxy: http://main.g2.bx.psu.edu/
+Galaxy: http://wwwportalmlekozyjestart.g2.bx.psu.edu/
 
 Orange: http://www.ailab.si/orange/
 
@@ -15127,7 +15127,7 @@ I also looked at R/parallel, but had major problems getting it to work. Lots of 
     <UserId>117</UserId>
     <Text>You seem to be going at this a bit backwards. The first step in science is to make a hypothesis, then choose the appropriate tools to answer it.  That may include genome sequencing, it may not. It seems like you've got a hammer, and you're looking for a nail.
 
-If you want to study cicadas, start reading up them. Look at the literature and see what other people are studying and what big unanswered cicada questions remain. If you lack access to subscription journals, try your local library, or other [online resources](http://friendfeed.com/references-wanted).  I suspect some of the questions relate to the different cycle lengths - have there been certain genes implicated? Do we know whether it's governed by differential gene expression, genomic factors, or even epigenomics? Has anyone sequenced them already? I'm sure some population geneticists would be interested in divergence patterns between the groups - might help you understand whether they're still the same species, or whether they're slowly splitting apart from each other because of the time differential in emergence.
+If you want to study cicadas, start reading up them. Look at the literature and see what other people are studying and what big unanswered cicada questions rewwwportalmlekozyjestart. If you lack access to subscription journals, try your local library, or other [online resources](http://friendfeed.com/references-wanted).  I suspect some of the questions relate to the different cycle lengths - have there been certain genes implicated? Do we know whether it's governed by differential gene expression, genomic factors, or even epigenomics? Has anyone sequenced them already? I'm sure some population geneticists would be interested in divergence patterns between the groups - might help you understand whether they're still the same species, or whether they're slowly splitting apart from each other because of the time differential in emergence.
 
 The same applies for fungi. Find out what some of the big unanswered questions are, then try to figure out what approach you might take to answer some of them. Then narrow it down further to manageable size projects that a new biologist could handle.
 </Text>
@@ -21578,7 +21578,7 @@ All aligners that use quality scores will have a flag to specify which encoding 
 
 The approach Galaxy takes is to use a groomer to convert everything to Sanger format, and then work from there:
 
-http://main.g2.bx.psu.edu/u/dan/p/fastq
+http://wwwportalmlekozyjestart.g2.bx.psu.edu/u/dan/p/fastq
 </Text>
   </row>
   <row>

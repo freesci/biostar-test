@@ -1,6 +1,6 @@
 # $Id: parts.py 7072 2011-07-06 15:52:30Z milde $
 # Authors: David Goodger <goodger@python.org>; Dmitry Jemerov
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Directives for document parts.

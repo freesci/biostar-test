@@ -818,16 +818,16 @@ msgstr "Серсүземне торгызырга"
 msgid "All dates"
 msgstr "Бөтен көннәр"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(Юк)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "%s сайлагыз"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "Үзгәртү өчен %s сайлагыз"

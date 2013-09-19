@@ -824,16 +824,16 @@ msgstr "Endursstilla lykilorðið mitt"
 msgid "All dates"
 msgstr "Allar dagsetningar"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(Ekkert)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "Veldu %s"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "Veldu %s til að breyta"

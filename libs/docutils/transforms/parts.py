@@ -1,6 +1,6 @@
 # $Id: parts.py 6073 2009-08-06 12:21:10Z milde $
 # Authors: David Goodger <goodger@python.org>; Ueli Schlaepfer; Dmitry Jemerov
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Transforms related to document parts.

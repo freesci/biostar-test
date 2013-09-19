@@ -1,7 +1,7 @@
 # $Id: __init__.py 7025 2011-05-05 23:19:51Z milde $
 # Authors: Chris Liechti <cliechti@gmx.net>;
 #          David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 S5/HTML Slideshow Writer.

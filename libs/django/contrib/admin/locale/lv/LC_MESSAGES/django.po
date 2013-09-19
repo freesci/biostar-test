@@ -812,16 +812,16 @@ msgstr "Paroles pārstatīšana"
 msgid "All dates"
 msgstr "Visi datumi"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr ""
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "Izvēlēties %s"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "Izvēlēties %s, lai izmainītu"

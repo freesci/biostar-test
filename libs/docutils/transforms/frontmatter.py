@@ -1,6 +1,6 @@
 # $Id: frontmatter.py 5618 2008-07-28 08:37:32Z strank $
 # Author: David Goodger, Ueli Schlaepfer <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Transforms related to the front matter of a document or a section

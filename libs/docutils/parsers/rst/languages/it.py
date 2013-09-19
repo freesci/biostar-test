@@ -1,7 +1,7 @@
 # $Id: it.py 6460 2010-10-29 22:18:44Z milde $
 # Authors: Nicola Larosa <docutils@tekNico.net>;
 #          Lele Gaifax <lele@seldati.it>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 # Beware: the italian translation of the reStructuredText documentation
 # at http://docit.bice.dyndns.org/static/ReST, in particular

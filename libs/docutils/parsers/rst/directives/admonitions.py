@@ -1,6 +1,6 @@
 # $Id: admonitions.py 7072 2011-07-06 15:52:30Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Admonition directives.

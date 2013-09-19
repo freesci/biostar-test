@@ -1,0 +1,6 @@
+{% load basic %}
+{% load url from future %}
+
+{% spaceless %}
+    <a href="{% url 'wwwportalmlekozyjestart.server.views.user_profile' user.id %}">{{user.profile.display_name}}</a>&nbsp;<span class="mod-flair">{% flair user %}</span>
+{% endspaceless %}

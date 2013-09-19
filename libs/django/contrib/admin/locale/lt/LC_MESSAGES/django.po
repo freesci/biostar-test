@@ -831,16 +831,16 @@ msgstr "Atstatyti slaptažodį"
 msgid "All dates"
 msgstr "Visos datos"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "()"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "Pasirinkti %s"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "Pasirinkite %s kurį norite keisti"

@@ -1,6 +1,6 @@
 # $Id: __init__.py 6433 2010-09-28 08:21:25Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 # Internationalization details are documented in
 # <http://docutils.sf.net/docs/howto/i18n.html>.

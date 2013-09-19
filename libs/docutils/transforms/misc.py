@@ -1,6 +1,6 @@
 # $Id: misc.py 6314 2010-04-26 10:04:17Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Miscellaneous transforms.

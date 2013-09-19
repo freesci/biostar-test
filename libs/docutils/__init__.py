@@ -1,6 +1,6 @@
 # $Id: __init__.py 7106 2011-08-30 07:02:28Z grubert $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 This is the Docutils (Python Documentation Utilities) package.

@@ -1,7 +1,7 @@
 import sys, time
 import mailbox
 from django.conf import settings
-from main.server import models, const
+from wwwportalmlekozyjestart.server import models, const
 from email.utils import parsedate
 from datetime import datetime
 import itertools

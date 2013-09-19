@@ -1,6 +1,6 @@
 # Author: Meir Kriheli
 # Id: $Id: he.py 4837 2006-12-26 09:59:41Z sfcben $
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 # New language mappings are welcome.  Before doing a new translation, please
 # read <http://docutils.sf.net/docs/howto/i18n.html>.  Two files must be

@@ -1,6 +1,6 @@
 # $Id: docutils_xml.py 4564 2006-05-21 20:44:42Z wiemann $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 Simple internal document tree Writer, writes Docutils XML.

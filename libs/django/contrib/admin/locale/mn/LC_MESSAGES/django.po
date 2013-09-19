@@ -826,16 +826,16 @@ msgstr "Нууц үгээ шинэчлэх"
 msgid "All dates"
 msgstr "Бүх огноо"
 
-#: views/main.py:31
+#: views/wwwportalmlekozyjestart.py:31
 msgid "(None)"
 msgstr "(Хоосон)"
 
-#: views/main.py:74
+#: views/wwwportalmlekozyjestart.py:74
 #, python-format
 msgid "Select %s"
 msgstr "%s-г сонго"
 
-#: views/main.py:76
+#: views/wwwportalmlekozyjestart.py:76
 #, python-format
 msgid "Select %s to change"
 msgstr "Өөрчлөх %s-г сонгоно уу"

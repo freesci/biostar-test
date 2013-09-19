@@ -1,6 +1,6 @@
 # $Id: io.py 7073 2011-07-07 06:49:19Z milde $
 # Author: David Goodger <goodger@python.org>
-# Copyright: This module has been placed in the public domain.
+# Copyright: This module has been placed in the public dowwwportalmlekozyjestart.
 
 """
 I/O classes provide a uniform API for low-level input and output.  Subclasses
