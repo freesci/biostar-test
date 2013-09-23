@@ -5,16 +5,24 @@
 {% load widgets %}
 
 {% block title %}
-    Post Edit - BioStar
+    Edytuj treść
 {% endblock %}
 
 {% block head %}
     <!-- markitUp editor -->
     <script src="{{ STATIC_URL }}js/handlers.js"></script>
-    <link rel="stylesheet" href="{{ STATIC_URL }}lib/pagedown/Markdown.css" type="text/css"/>
+<!---    <link rel="stylesheet" href="{{ STATIC_URL }}lib/pagedown/Markdown.css" type="text/css"/>
     <script type="text/javascript" src="{{ STATIC_URL }}lib/pagedown/Markdown.Converter.js"></script>
     <script type="text/javascript" src="{{ STATIC_URL }}lib/pagedown/Markdown.Sanitizer.js"></script>    
-    <script type="text/javascript" src="{{ STATIC_URL }}lib/pagedown/Markdown.Editor.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/pagedown/Markdown.Editor.js"></script> -->
+
+<!--     <link rel="stylesheet" href="{{ STATIC_URL }}redactor/css/redactor.css" />
+    <script src="{{ STATIC_URL}}redactor/redactor.min.js"></script>
+    <script src="{{ STATIC_URL }}redactor/langs/pl.js"></script>
+    <script src="{{ STATIC_URL }}redactor/jquery-migrate.min.js"></script>
+ -->
+    <script src="{{ STATIC_URL }}ckeditor/ckeditor/ckeditor.js"></script>
+    <script src="{{ STATIC_URL }}js/insertschema.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="{{ STATIC_URL }}lib/tagit.js"></script>
     <link rel="stylesheet" href="{{ STATIC_URL }}lib/tagit.css" />
@@ -54,12 +62,16 @@
         });
     </script>
 
-{% endblock %}
 
-{% block document_ready %}
-    var converter1 = Markdown.getSanitizingConverter();
-    var editor1 = new Markdown.Editor(converter1);
-    editor1.run();
+<!--     <script type="text/javascript">
+    $(document).ready(
+	function()
+	{
+		$('#redactor_content').redactor({lang:'pl', imageUpload: '/redactor/upload/image/', minHeight: 200});
+	}
+    );
+    </script>  -->
+
 {% endblock %}
 
 {% block body %}
@@ -67,11 +79,6 @@
     <div class="row">
         <br><br>
         <div class="span12">
-
-            <div align="center" style="padding-bottom: 20px;" >
-                How to ask good questions: <a target="new" href="http://www.ploscollections.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1002202;jsessionid=A2C2B677241104800E044DA36AFB577B">
-                    Ten Simple Rules for Getting Help from Online Scientific Communities</a>
-            </div>
 
             <div>
             <form action="{{ request.path }}" method="post" id="mainform" class="form-horizontal">
@@ -126,7 +133,12 @@
 
 
                         <div class="controls">
-                            {{ form.type }}
+                           <select name="type" id="id_type">
+<option value="1">Pytanie</option>
+<option value="4">Instrukcja</option>
+<option value="7">Ogłoszenie</option>
+<option value="8">Dziennik laboratoryjny</option>
+</select>
                             <span class="help-inline">{{ form.type.errors }}</span>
                         </div>
                     </div>
@@ -134,7 +146,7 @@
                 {%  else %}
                     <input type="hidden" id="id_tag_val">
                 {% endif %}
-
+		{{ form.media }}
                 {%  if form.context %}
                     <div class="control-group">
 
@@ -155,15 +167,36 @@
 
                         <div class="wmd-panel">
                             <div id="wmd-button-bar"></div>
-                            <textarea class="wmd-input" id="wmd-input" placeholder="Post content" name="content"
+                            <textarea id="content" placeholder="Post content" name="content"
                                       onfocus="">{{ form.content.value}}</textarea>
                         </div>
-
+                        <script type="text/javascript">
+                        	CKEDITOR.replace( 'content' ,{
+                        	toolbar : [
+	['Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','-','Image','-','Styles','Format','Font','FontSize']
+				],
+                        	uiColor : '#008000',
+                        	language: 'pl',
+                        	'filebrowserUploadUrl':'/upload/',
+                        	'filebrowserBrowseUrl':'/browse/'});
+                        </script>
                         <span class="help-inline error">{{ form.content.errors }}</span>
-                        <div>Post preview:</div>
-                        <div id="wmd-preview" class="wmd-panel wmd-preview"></div>
                     </div>
                 </div>
+
+    <script type="text/javascript">
+    document.getElementById("id_type").onchange = function() {
+    	var posttype=document.getElementById("id_type").value;
+
+   	if(posttype=="8"){
+	   //$('#redactor_content').redactor('destroy'); 
+	   CKEDITOR.instances.content.insertHtml(labnotetemplate);
+	   console.log("aqqaq");
+   	}
+    	return false
+    };
+    </script>
+
 
                 <div class="control-group">
                     <label class="control-label" for="button"></label>
@@ -171,10 +204,9 @@
                     <div class="controls">
                         <a class="btn btn-success" id="submit-button"
                            href='javascript: document.forms["mainform"].submit()'><i
-                                class="icon-ok icon-white"></i>
-                            Submit Post</a> or
+                                class="icon-ok icon-white"></i>Zapisz</a> or
                         <a class="btn btn-danger" id="cancel-button" href='javascript: history.back()'><i
-                                class="icon-arrow-left icon-white"></i> Go back</a>
+                                class="icon-arrow-left icon-white"></i> Wróć</a>
                     </div>
 
 
@@ -200,4 +232,5 @@
             </div>
         </div>
     </div>
+   {{ form.media }}
 {% endblock %}

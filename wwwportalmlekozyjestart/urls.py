@@ -6,7 +6,6 @@ from wwwportalmlekozyjestart.server import const
 from server.views_refactored import MessageView, AdView, ToggleAd, NextAd, AdHelp
 from server.views_tag import TagList
 
-
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
@@ -147,7 +146,8 @@ urlpatterns = patterns('wwwportalmlekozyjestart.server',
     url(r'^api/user/(?P<uid>\d+)/$', 'api.user_info', name='api-user'),
     url(r'^api/post/(?P<pid>\d+)/$', 'api.post_info', name='api-post'),
     url(r'^api/stats/(?P<days>\d+)/$', 'api.stats', name='api-stats'),
-
+    #editor/ckeditor
+    
 )
 
 
@@ -175,6 +175,8 @@ urlpatterns += patterns('',
 from server.feeds import LatestEntriesFeed, NotificationFeed, MyTagsFeed, PostTypeFeed
 from server.feeds import TagsFeed, PostFeed, UserFeed
 
+
+
 urlpatterns += patterns('',
     
     # RSS feeds
@@ -193,6 +195,20 @@ urlpatterns += patterns('',
     # Enable the admin:
     url(r'^admin/', include(admin.site.urls), name='admin'),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls'), name='admin-docs'),
+
+    #redactor
+#    url('^upload/image/(?P<upload_to>.*)', redactor_upload, {
+#        'form_class': ImageForm,
+#        'response': lambda name, url: '<img src="%s" alt="%s" />' % (url, name),
+#        }, name='redactor_upload_image'),
+#
+#    url('^upload/file/(?P<upload_to>.*)', redactor_upload, {
+#        'form_class': FileForm,
+#        'response': lambda name, url: '<a href="%s">%s</a>' % (url, name),
+#        }, name='redactor_upload_file'),
+    #ckeditor
+    url(r'^upload/', 'ckeditor.views.upload', name='ckeditor_upload'),
+    url(r'^browse/', 'ckeditor.views.browse', name='ckeditor_browse'),
 )
 
 urlpatterns += staticfiles_urlpatterns()

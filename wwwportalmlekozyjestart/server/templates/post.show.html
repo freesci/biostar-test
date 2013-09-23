@@ -2,7 +2,7 @@
 {% load widgets %}
 {% load basic %}
 {% block title %}
-    {{ root.title }} - BioStar
+    {{ root.title }} - Mleko Żyje
 {% endblock %}
 
 {% block head %}
@@ -11,13 +11,13 @@
     <!-- prettify -->
     <link href="{{ STATIC_URL }}lib/prettify.css" rel="stylesheet">
     <script src="{{ STATIC_URL }}lib/prettify.js"></script>
+    <script src="{{ STATIC_URL }}ckeditor/ckeditor/ckeditor.js"></script>
 
 
-
-    <link rel="stylesheet" href="{{ STATIC_URL }}lib/pagedown/Markdown.css" type="text/css"/>
+   <!--  <link rel="stylesheet" href="{{ STATIC_URL }}lib/pagedown/Markdown.css" type="text/css"/>
     <script type="text/javascript" src="{{ STATIC_URL }}lib/pagedown/Markdown.Converter.js"></script>
     <script type="text/javascript" src="{{ STATIC_URL }}lib/pagedown/Markdown.Sanitizer.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}lib/pagedown/Markdown.Editor.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/pagedown/Markdown.Editor.js"></script> -->
     <meta name="keywords" content="{{ root.tag_val }}"/>
 {% endblock %}
 
@@ -46,11 +46,7 @@
     $('.vote-down').tooltip('hide')
     $('.vote-bookmark').tooltip('hide')
 
-    {% if root.open %}
-        var converter1 = Markdown.getSanitizingConverter();
-        var editor1 = new Markdown.Editor(converter1);
-        editor1.run();
-    {% endif %}
+
 
 {% endblock %}
 
@@ -95,7 +91,7 @@
         <div class="span12">
             <h3>
                 {% if root.answer_count %}
-                    {{ root.answer_count }} answer{{ root.answer_count|pluralize }}
+                    Odpowiedzi: {{ root.answer_count }}
                 {% endif %}
             </h3>
         </div>
@@ -118,13 +114,11 @@
                     {% if root.answer_only %}
 
                         <div class="alert alert-info alert-block" style="margin-top:20px;">
-                            <h4>By submitting the form below you will be adding a new Answer for the Question at the
-                                very top!</h4>
+                            <h4>Wpisując tekst w formularz poniżej dodasz nową odpowiedź do tego pytania na samej górze.</h4>
 
-                            <p> Please use the
-                                <span class="label">comment</span> or <span class="label">reply</span>
-                                links if you want to respond to an existing answer, ask for clarifications, add more
-                                information, thank a user, etc...</p>
+                            <p> Użyj opcji
+                                <span class="label">skomentuj</span> lub <span class="label">odpowiedz</span>
+				jeśli chcesz odpowiedzieć na istniejący wpis, zapytać o szczegóły lub dodać więcej informacji. </p>
                         </div>
                     {% else %}
                         <div class="alert alert-success alert-block" style="margin-top:10px;">
@@ -142,9 +136,9 @@
                         {% csrf_token %}
 
                         {% if root.answer_only %}
-                            <legend>Add a new answer to the question!</legend>
+                            <legend>Dodaj nową odpowiedź do tego pytania!</legend>
                         {% else %}
-                            <legend>Add a new post!</legend>
+                            <legend>Odpowiedz lub skomentuj!</legend>
                         {% endif %}
 
                         <fieldset>
@@ -152,22 +146,32 @@
                                 <div class="controls">
                                     <div class="wmd-panel">
                                         <div id="wmd-button-bar"></div>
-                                        <textarea class="wmd-input" id="wmd-input" name="content"></textarea>
+                                        <textarea class="wmd-input" id="content" name="content"></textarea>
                                     </div>
                                     <div id="wmd-preview" class="wmd-panel wmd-preview"></div>
                                 </div>
+                                <script type="text/javascript">
+                        	CKEDITOR.replace( 'content' ,{
+                        	toolbar : [
+	['Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','-','Image','-','Styles','Format','Font','FontSize']
+				],
+                        	uiColor : '#008000',
+                        	language: 'pl',
+                        	'filebrowserUploadUrl':'/upload/',
+                        	'filebrowserBrowseUrl':'/browse/'});
+                        </script>
                             </div>
                             <div class="form-actions">
                                 <a class="btn btn-success" id="submit-button"
                                    href='javascript: document.forms["mainform"].submit()'><i
-                                        class="icon-ok icon-white"></i> Submit Answer</a>
+                                        class="icon-ok icon-white"></i> Zapisz</a>
                             </div>
 
                             <div class="control-group">
                                 <label class="control-label" for="button"></label>
 
                                 <div class="controls">
-                                    <div class="alert"><b>Note</b>: by posting to BioStar, you agree to a <a
+                                    <div class="alert"><b>Note</b>: by posting to MlekoŻyje, you agree to a <a
                                             href="http://creativecommons.org/licenses/by/3.0/">Creative Commons -
                                         Attribution</a> license.
                                     </div>
@@ -180,7 +184,7 @@
             </div>
         {% endif %}
     {% else %}
-        <div class="alert alert-info" style="margin-top: 5px;">Log in to add a post</div>
+        <div class="alert alert-info" style="margin-top: 5px;">Zaloguj by dodać odpowiedź</div>
     {% endif %}
 
 {% endblock %}

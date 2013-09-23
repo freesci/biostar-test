@@ -237,6 +237,7 @@ INSTALLED_APPS = [
     'wwwportalmlekozyjestart.server',
     'django_openid_auth',
     'django.contrib.sitemaps',
+    'ckeditor',
 
 ]
 
@@ -384,6 +385,18 @@ TEMPLATE_ROWS = {
 
 # how long will an ad be active by default
 DEFAULT_AD_EXPIRATION = 1
+
+
+#CKEDITOR
+CKEDITOR_UPLOAD_PATH = "/home/portalmlekozyje/www/wwwportalmlekozyjestart/static/uploads"
+CKEDITOR_UPLOAD_PREFIX = "http://www.portalmlekozyje.megiteam.pl/static/uploads/"
+CKEDITOR_CONFIGS = {
+    'awesome_ckeditor': {
+        'toolbar': 'Basic',
+        'language': 'pl',
+    },
+}
+
 
 
 import os
